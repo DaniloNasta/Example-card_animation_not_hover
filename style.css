@@ -1,0 +1,22 @@
+body{
+    background-color: #252525;
+}
+
+.card:hover .card-img{
+    transform: scale(1.05) translateZ(0);
+}
+
+.card:hover h5, 
+.card:hover p{
+    color: #252525;
+}
+
+.card-container:hover> :not(:hover) .card-img{
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+
+.card-img{
+    transition: 
+        filter 400ms ease-in-out,
+        transform 400ms ease-in-out;
+}
